@@ -1,13 +1,11 @@
-$root-font-size: 16px;
-
 @function px-to-rem($unit) {
-    @return $unit * $root-font-size;
-}
+    $root-font-size: 16;
 
-:root {
-    font-size: $root-font-size;
+    $rem: $unit / $root-font-size;
+
+    @return #{$rem}rem;
 }
 
 .container {
-    font-size: px-to-rem(2);
+    font-size: px-to-rem(24);
 }
