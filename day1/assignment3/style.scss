@@ -1,0 +1,11 @@
+@mixin display() {
+    display: block;
+
+    @media screen and (min-width: 428px) {
+        display: flex;
+    }
+}
+
+.card {
+    @include display();
+}

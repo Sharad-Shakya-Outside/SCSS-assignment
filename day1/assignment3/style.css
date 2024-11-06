@@ -1,0 +1,8 @@
+.card {
+  display: block;
+}
+@media screen and (min-width: 428px) {
+  .card {
+    display: flex;
+  }
+}/*# sourceMappingURL=style.css.map */
