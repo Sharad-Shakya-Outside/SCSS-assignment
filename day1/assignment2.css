@@ -1,1 +1,86 @@
-/*# sourceMappingURL=assignment2.css.map */
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+h1 {
+  line-height: 2;
+}
+
+h2 {
+  line-height: 1.625;
+}
+
+h3 {
+  line-height: 1.5;
+}
+
+h4 {
+  line-height: 1.375;
+}
+
+h5 {
+  line-height: 1.25;
+}
+
+h6 {
+  line-height: 1;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 56px;
+  }
+  h2 {
+    font-size: 52px;
+  }
+  h3 {
+    font-size: 48px;
+  }
+  h4 {
+    font-size: 44px;
+  }
+  h5 {
+    font-size: 40px;
+  }
+  h6 {
+    font-size: 36px;
+  }
+  h1 {
+    line-height: 3;
+  }
+  h2 {
+    line-height: 2.625;
+  }
+  h3 {
+    line-height: 2.5;
+  }
+  h4 {
+    line-height: 2.375;
+  }
+  h5 {
+    line-height: 2.25;
+  }
+  h6 {
+    line-height: 2;
+  }
+}/*# sourceMappingURL=assignment2.css.map */
