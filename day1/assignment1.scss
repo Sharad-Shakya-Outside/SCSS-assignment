@@ -1,0 +1,13 @@
+$root-font-size: 16px;
+
+@function px-to-rem($unit) {
+    @return $unit * $root-font-size;
+}
+
+:root {
+    font-size: $root-font-size;
+}
+
+.container {
+    font-size: px-to-rem(2);
+}
