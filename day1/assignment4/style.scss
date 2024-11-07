@@ -1,0 +1,24 @@
+$spaces: (1, 2, 3, 4);
+$sides: (top, bottom, left, right);
+
+@each $space in $spaces {
+    $pixels: $space * 4;
+
+    .m-#{$space} {
+        margin: #{$pixels}px;
+    }
+    .p-#{$space} {
+        padding: #{$pixels}px;
+    }
+
+    @each $side in $sides {
+        $pixels: $space * 4;
+
+        .m-#{str-slice($side, 0, 1)}-#{$space} {
+            margin-#{$side}: #{$pixels}px;
+        }
+        .p-#{str-slice($side, 0, 1)}-#{$space} {
+            padding-#{$side}: #{$pixels}px;
+        }
+    }
+}
