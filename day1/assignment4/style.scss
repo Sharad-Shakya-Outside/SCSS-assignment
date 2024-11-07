@@ -12,7 +12,6 @@ $sides: (top, bottom, left, right);
     }
 
     @each $side in $sides {
-        $pixels: $space * 4;
 
         .m-#{str-slice($side, 0, 1)}-#{$space} {
             margin-#{$side}: #{$pixels}px;
