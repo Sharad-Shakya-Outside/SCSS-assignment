@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import "./resets";
+@import "./variables";
+
+@function px-to-rem($px) {
+    @return #{$px / 16}rem;
+}
+
+@mixin font-style($weight, $size, $line-height, $color) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $line-height;
+    color: $color;
+}
+
+body {
+    font-family: $font-Inter;
+}
+
+.container {
+    width: 100%;
+    background-color: $bg-body;
+    padding-block: 104px;
+
+    .channel {
+        max-width: 1060px;
+        margin-inline: auto;
+
+        $self: ".channel";
+
+        &__header {
+            text-align: center;
+
+            p {
+                @include font-style($font-normal, px-to-rem(14), px-to-rem(24), $color-text-cyan);
+                letter-spacing: px-to-rem(1.5);
+            }
+            h1 {
+                @include font-style($font-normal, px-to-rem(38), px-to-rem(48), $color-text-charcoal);
+            }
+        }
+
+        &__items {
+            margin-block: px-to-rem(64);
+            display: flex;
+            justify-content: center;
+            gap: px-to-rem(32);
+            flex-wrap: wrap;
+
+            #{$self}__container {
+                background-color: white;
+                width: 300px;
+                height: 231px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                #{$self}__media {
+                    aspect-ratio: 4 / 3;
+                    max-width: px-to-rem(212);
+                }
+            }
+        }
+    }
+}

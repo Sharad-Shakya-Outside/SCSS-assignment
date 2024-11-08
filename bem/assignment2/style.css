@@ -1,1 +1,62 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 100%;
+  background-color: #F6F7FB;
+  padding-block: 104px;
+}
+.container .channel {
+  max-width: 1060px;
+  margin-inline: auto;
+}
+.container .channel__header {
+  text-align: center;
+}
+.container .channel__header p {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #00A599;
+  letter-spacing: 0.09375rem;
+}
+.container .channel__header h1 {
+  font-weight: 400;
+  font-size: 2.375rem;
+  line-height: 3rem;
+  color: #202020;
+}
+.container .channel__items {
+  margin-block: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.container .channel__items .channel__container {
+  background-color: white;
+  width: 300px;
+  height: 231px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .channel__items .channel__container .channel__media {
+  aspect-ratio: 4/3;
+  max-width: 13.25rem;
+}/*# sourceMappingURL=style.css.map */
