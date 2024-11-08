@@ -1,1 +1,105 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Karla+Tamil+Upright:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Karla+Tamil+Upright:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #02033B;
+}
+
+.container {
+  width: 100%;
+  background-color: #F3F8FF;
+  padding-block: 5.6rem;
+}
+.container .insight {
+  max-width: 1065px;
+  margin-inline: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .insight__heading {
+  font-weight: 800;
+  font-size: 3.7333333333rem;
+  line-height: 5rem;
+  letter-spacing: -0.08rem;
+}
+.container .insight__cards {
+  display: flex;
+  gap: 3.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-block: 4.8rem;
+}
+.container .insight__btn {
+  background-color: #FFC247;
+  padding-block: 1.0666666667rem;
+  padding-inline: 1.3333333333rem;
+  border-radius: 2.8rem;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+.container .insight__btn p {
+  font-weight: 800;
+  font-size: 1.2666666667rem;
+  line-height: 1.5rem;
+  color: #02033B;
+}
+.container .insight__btn svg path {
+  fill: #02033B;
+}
+.container .insight .card {
+  max-width: 320px;
+  border-radius: 3.2rem;
+  overflow: hidden;
+  background-color: white;
+}
+.container .insight .card__image-container {
+  position: relative;
+}
+.container .insight .card__image-container .card__help {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background-color: #F3F8FF;
+  border-radius: 3.2rem;
+  padding-inline: 1.3333333333rem;
+  padding-block: 0.8rem;
+  font-weight: 800;
+}
+.container .insight .card__image {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+.container .insight .card__content {
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6666666667rem;
+  text-align: left;
+}
+.container .insight .card__content .card__title {
+  font-weight: 700;
+  font-size: 1.5333333333rem;
+  line-height: 2rem;
+}
+.container .insight .card__content .card__description {
+  font-weight: 400;
+  font-size: 1.0666666667rem;
+  line-height: 1.6rem;
+}/*# sourceMappingURL=style.css.map */
