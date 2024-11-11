@@ -7,8 +7,7 @@
     @return #{$px / 16}rem;
 }
 
-@mixin font-style($weight, $size, $line-height, $color) {
-    font-weight: $weight;
+@mixin font-style($size, $line-height, $color) {
     font-size: $size;
     line-height: $line-height;
     color: $color;
@@ -16,4 +15,92 @@
 
 body {
     font-family: $font-Inter;
+}
+
+.container {
+    width: 100%;
+    background-color: $bg-body;
+    padding-block: 106px;
+
+    .faq {
+        $self: ".faq";
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: clamp(10px, 10vw, 150px);
+        margin-right: clamp(10px, 10vw, 50px);
+        color: $color-primary;
+        font-weight: $font-normal;
+
+        &__header {
+            display: flex;
+            flex-direction: column;
+            gap: px-to-rem(40);
+            max-width: 321px;
+
+            #{$self}__heading{
+                p {
+                    @include font-style(px-to-rem(14), px-to-rem(24), $color-teal);
+                    letter-spacing: px-to-rem(1.5);
+                }
+                h1 {
+                    @include font-style(px-to-rem(38), px-to-rem(48), $color-primary);
+                }
+            }
+
+            #{$self}__btn {
+                border: 1px solid $color-primary;
+                text-align: center;
+                padding-inline: px-to-rem(48);
+                padding-block: px-to-rem(18);
+                max-width: 154px;
+                @include font-style(px-to-rem(15), px-to-rem(20), $color-primary);
+                border-radius: px-to-rem(28);
+                cursor: pointer;
+            }
+        }
+
+        .accordion {
+            max-width: 695px;
+
+            $self: ".accordion";
+
+            &__item {
+                cursor: pointer;
+                transition: 300ms ease;
+                padding-block: px-to-rem(24);
+                border-bottom: 1px solid $border-accordion;
+
+                display: grid;
+                grid-template-rows: 1.5em 0fr;
+
+                #{$self}__title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p {
+                        @include font-style(px-to-rem(20), px-to-rem(28), $color-primary);
+                    }
+                }
+
+                &--open {
+                    grid-template-rows: 1.5em 1fr;
+
+                    #{$self}__btn {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            &__copy {
+                @include font-style(px-to-rem(17), px-to-rem(28), $color-secondary);
+
+                &--hidden {
+                    overflow: hidden;
+                }
+            }
+        }
+    }
 }

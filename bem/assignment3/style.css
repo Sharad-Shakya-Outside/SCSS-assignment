@@ -14,4 +14,83 @@ body {
 
 body {
   font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 100%;
+  background-color: #093944;
+  padding-block: 106px;
+}
+.container .faq {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: clamp(10px, 10vw, 150px);
+  margin-right: clamp(10px, 10vw, 50px);
+  color: #fff;
+  font-weight: 400;
+}
+.container .faq__header {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 321px;
+}
+.container .faq__header .faq__heading p {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #00A599;
+  letter-spacing: 0.09375rem;
+}
+.container .faq__header .faq__heading h1 {
+  font-size: 2.375rem;
+  line-height: 3rem;
+  color: #fff;
+}
+.container .faq__header .faq__btn {
+  border: 1px solid #fff;
+  text-align: center;
+  padding-inline: 3rem;
+  padding-block: 1.125rem;
+  max-width: 154px;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  color: #fff;
+  border-radius: 1.75rem;
+  cursor: pointer;
+}
+.container .faq .accordion {
+  max-width: 695px;
+}
+.container .faq .accordion__item {
+  cursor: pointer;
+  transition: 300ms ease;
+  padding-block: 1.5rem;
+  border-bottom: 1px solid #20545F;
+  display: grid;
+  grid-template-rows: 1.5em 0fr;
+}
+.container .faq .accordion__item .accordion__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .faq .accordion__item .accordion__title p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #fff;
+}
+.container .faq .accordion__item--open {
+  grid-template-rows: 1.5em 1fr;
+}
+.container .faq .accordion__item--open .accordion__btn {
+  transform: rotate(180deg);
+}
+.container .faq .accordion__copy {
+  font-size: 1.0625rem;
+  line-height: 1.75rem;
+  color: #90A5A9;
+}
+.container .faq .accordion__copy--hidden {
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
